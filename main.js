@@ -225,7 +225,7 @@ function getrandomstring(wordnum){
 
 
 for (let index = 0; index < wordnum; index++){
-let randomINDEX=Math.floor(Math.random() * 233);
+let randomINDEX=Math.floor(Math.random() * 200);
  string += " "+ words[randomINDEX]
 
 }
