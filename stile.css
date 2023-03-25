@@ -85,7 +85,7 @@ letter{
     border-radius: 2px!important;
 }
 body{
-    transition: all 0.128s ease-in-out;
+    transition: all 0.500s ease-in-out;
     background-color: var(--bg-color);
 }
 word{
