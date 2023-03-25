@@ -264,7 +264,11 @@ function startTimer(duration, display) {
 let myInterval=null
 
 
+
+
+
     reset.addEventListener("click",(e)=>{
+
         if(myInterval!==null)
         clearInterval(myInterval||null)
         timer.innerText="";
@@ -283,7 +287,9 @@ let myInterval=null
          childerns = Array.prototype.slice.call( texbody.children )
          word= Array.prototype.slice.call( childerns[wordindex].children)
          rusltbord.style.display="none"
-         cart.style.display="block"
+      
+         
+              cart.style.display="block"
          timer.style.display="block"
          
         })
@@ -478,6 +484,11 @@ console.log(ruslt)
 
   
  }
-document.querySelector(".close").addEventListener("click",function(e){
-  e.target.parentElement.remove();
-})
+
+ document.querySelector("ul")
+ .addEventListener("click",function(e){
+  let body=document.querySelector("body")
+  let theme=e.target.innerText
+  body.className=theme
+  console.log(theme,e.target)
+ })
