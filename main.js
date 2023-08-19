@@ -444,7 +444,7 @@ function startTimer(duration, display) {
 
     display.textContent = timer;
 
-    if (timer < 0) {
+    if (--timer < 0) {
         timer = 0;
         clearInterval(myInterval)
         timeout=true
